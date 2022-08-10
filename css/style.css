@@ -1,0 +1,112 @@
+:root{
+    --primary-color:#F2F2F2;
+    --secondary-color:#94C6F2;
+    --tertiary-color:#010B40;
+    --dark-color:#010326;
+    --contrast-ligth:#F2EEAC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+header{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    width: 100%;
+    height: 8.75rem;
+}
+header .header-icons-container{
+    display: grid;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--secondary-color);
+}
+header .header-icons-container .icons{
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    /* width: 18.75rem; */
+    /* height: auto; */
+    margin-right: 3.125rem;
+}
+header span{
+    color: var(--primary-color);
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    background-color: var(--primary-color);
+}
+nav .nav-logo-container{
+    margin-left: 3.125rem;
+}
+nav .nav-logo-container img{
+    width: 12.25rem;
+    margin-top: .625rem;
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a{
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
+    font-weight: 600;
+}
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/7412036/pexels-photo-7412036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 21.875rem;
+    margin-top: 29rem;
+}
+.home-main-text{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: var(--tertiary-color);
+}
+.home-main-button{
+    display: grid;
+    width: 16.875rem;
+    height:4.125rem;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    background: var(--secondary-color);
+    border-radius: .9375rem;
+    border: 1px solid var(--dark-color);
+}

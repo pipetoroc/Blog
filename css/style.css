@@ -14,12 +14,18 @@ html{
     font-size: 62.5%;
 }
 body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.home-body{
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+}
+.grid-container{
+    max-width: 140rem;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -31,7 +37,7 @@ header{
     display: grid;
     grid-template-rows:1fr 1fr;
     width: 100%;
-    height: 8.75rem;
+    height: 19rem;
 }
 header .header-icons-container{
     display: grid;
@@ -109,4 +115,176 @@ nav .profile-link a{
     background: var(--secondary-color);
     border-radius: .9375rem;
     border: 1px solid var(--dark-color);
+}
+.blogs-main{
+    display: grid;
+}
+.blogs-news-container{
+    background-color: #e6e9ed;
+    padding: 0 7.5rem 5.5rem;
+}
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-main-new h3{
+    padding: 2.5rem 0px ;
+    font-size: 3rem;
+}
+.blogs-news-img-container{
+    grid-column: 1;
+}
+.blogs-news-img-container img{
+    margin: 0 auto;
+    width: 80%;
+}
+.blogs-news-info-container{
+    grid-column: 2;
+}
+.blogs-news-info-container h2{
+    margin-bottom: 2.1875rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.blogs-news-info-container p{
+    margin-bottom: 2.1875rem;
+    text-align: justify;
+    font-size: 2.5rem;
+}
+.blogs-post-container{
+    padding: 0 3.125rem 2.5rem;
+}
+.blogs-posts-container h3{
+    border-bottom: 1px solid var(--tertiary-color);
+    padding-bottom: 4.25rem;
+    margin: 1.875rem;
+    text-align: center;
+}
+.blogs-posts-container .post-container{
+    display: inline-block;
+    padding-left: 4.625rem;
+    max-width: 30%;
+    margin-bottom: 9.125rem;
+}
+.blogs-posts-container .post-container h4{
+    margin-bottom: 2.1875rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.blogs-posts-container .post-container p{
+    margin-bottom: 2.1875rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.blogs-posts-container .post-container img{
+    width: 90%;
+}
+footer{
+    width: 100%;
+    height: 9rem;
+    background-color: var(--dark-color);
+    border-top: 2.1875rem solid var(--secondary-color);
+    text-align: center;
+}
+footer p{
+    margin-top: 1.875rem;
+    font-size: 1.5rem;
+    color: var(--contrast-ligth);
+}
+.blogpost-img-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 5.125rem 3.5rem
+}
+.blogpost-img-container img{
+    margin: auto;
+    width: 40%;
+}
+.blogpost-main-container {
+    padding: 0 5.125rem 3.5rem;
+}
+.blogpost-main-container h3{
+    padding: 1.875rem;
+    border-bottom: solid 1px var(--tertiary-color);
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+.blogpost-main-container article h1{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.blogpost-main-container article p{
+    font-size: 2rem;
+    text-align: justify;
+}
+i{
+    padding: 2.75rem 0.75rem;
+    font-size: 5rem;
+    color: var(--dark-color);
+}
+.contact-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: var(--secondary-color);
+}
+.contact-main-container a{
+    border-bottom: 1px solid var(--dark-color);
+}
+.contact-main-container p{
+
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.profile-main-container{
+    padding: 5.375rem 3.5rem;
+    background-color: var(--primary-color);
+    margin-bottom: 3.125rem;
+}
+.profile-main-container img{
+    width: 25rem;
+    margin-right: 5.875rem;
+}
+.profile-main-container .profile-container{
+    display: flex;
+}
+.info-container{
+    padding-left: 4.5rem;
+}
+.info-container h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.info-container p{
+    font-size: 2rem;
+    text-align: justify;
+}
+.profile-main-projects {
+    padding: 0 3.125rem 2.5rem;
+}
+.profile-main-projects h3{
+    border-bottom: 1px solid var(--dark-color);
+    padding-bottom: 2.1875rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.projects-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-container{
+    padding: 0 1.5rem;
+}
+.project-container h4{
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+.project-container p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+ol{
+    font-size: 2rem;
 }
